@@ -49,7 +49,7 @@ def reading(strOfNumAndOper):
             if symbol == '+': stack.append(a + b)
             elif symbol == '-': stack.append(a - b)
             elif symbol == '*': stack.append(a * b)
-            elif symbol == '/': stack.append(a / b if b != 0 else float('inf'))
+            elif symbol == '/': stack.append(a / b)
             elif symbol == '^': stack.append(a ** b)
         else:
             stack.append(float(symbol))
